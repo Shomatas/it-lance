@@ -1,0 +1,21 @@
+.nav
+
+  gap: var(--margin-gap)
+
+  &__ul
+    display: flex
+    width: 100%
+    justify-content: space-between
+    text-transform: uppercase
+    gap: var(--margin-gap)
+
+  &__item
+
+    &:hover
+      a
+        color: var(--color-blue)
+        transition: color 0.3s
+
+    &_active
+      a
+        color: var(--color-royal-blue) !important

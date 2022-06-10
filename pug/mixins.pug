@@ -1,0 +1,9 @@
+mixin cap_card(img, btn_icon, title, descr)
+  .card.capabilities-card
+    .card-logo
+      img(src="./static/img/" + img)
+    button.btn-reset.btn-blue.card__btn
+      svg
+        use(xlink:href="./static/img/" + btn_icon)
+    span.title.title-primary.card__title #{title}
+    p.descr.card__descr #{descr}

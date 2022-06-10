@@ -1,0 +1,7 @@
+section.capabilities
+  .container.capabilities__container
+    h2.title.capabilities__title Возможности
+    .cards.capabilities-cards
+      each card in cap_cards
+        +cap_card(card.img, card.btn_icon, card.title, card.descr)
+      

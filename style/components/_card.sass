@@ -1,0 +1,61 @@
+.card
+  max-width: 360px
+  text-align: center
+  position: relative
+
+  &__btn
+    width: 65px
+    height: 65px
+    border-radius: 100%
+    position: absolute
+    top: 177.5px
+    left: 50%
+    margin-left: -32.5px
+    cursor: pointer
+
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+
+    &::before
+      display: block
+      position: absolute
+      content: ''
+      border-radius: 100%
+      border: dashed 1px var(--color-blue)
+      width: 81px
+      height: 81px
+
+    &:hover
+
+      &::before
+        animation: rotated 15s infinite linear
+
+    svg
+      fill: white
+        width: 30px
+        height: 30px
+
+      &:nth-child(1)
+        width: 30px
+        height: 26px
+
+  &-logo
+    width: 360px
+    height: 210px
+    margin-bottom: 41px
+
+    img
+      border-radius: 20px
+
+  &__title
+    font-size: var(--fsize-sm-title)
+
+  &__descr
+    font-size: var(--fsize-sm-descr)
+
+@keyframes rotated
+
+  100%
+    transform: rotate(360deg)
